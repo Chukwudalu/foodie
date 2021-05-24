@@ -11,7 +11,7 @@ function Details() {
     const id = location.pathname.split('/')[1];
     useEffect(() => {
         dispatch(loadMealById(id))
-    }, [dispatch])
+    }, [dispatch, id])
     const details = useSelector((state) => state.meals.mealDetails)
     // const detail = details[0]
     const { strMeal, strInstructions, strMealThumb,
@@ -21,11 +21,11 @@ function Details() {
     return (
 
         <>
-            {Object.keys(details).length==0?<ReactLoading type={'bars'} color={'#bb3e03'} height={100} weight={100} className='loader'/>:(
+            {Object.keys(details).length===0?<ReactLoading type={'bars'} color={'#bb3e03'} height={100} weight={100} className='loader'/>:(
                 <div className='details'>
                 <div className='details_left'>
                     <h3>{strMeal}</h3>
-                    <img src={strMealThumb} alt='image' />
+                    <img src={strMealThumb} alt='meal thumb' />
                     <div>
                         <h4>Instructions</h4>
                         <p>{strInstructions}</p>
