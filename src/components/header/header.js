@@ -1,10 +1,10 @@
 import './header.scss'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import {useDispatch} from 'react-redux'
 import { Link } from 'react-router-dom'
 import SearchIcon from '@material-ui/icons/Search';
 import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
+// import * as AiIcons from 'react-icons/ai'
 import { loadMealByName } from '../../actions/mealAction'
 import {useHistory} from 'react-router-dom'
 

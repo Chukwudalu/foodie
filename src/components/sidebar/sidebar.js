@@ -1,6 +1,6 @@
 import './sidebar.scss'
 import { Link } from 'react-router-dom'
-import HomeIcon from '@material-ui/icons/Home';
+// import HomeIcon from '@material-ui/icons/Home';
 
 function SideBar() {
 

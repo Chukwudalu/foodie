@@ -14,9 +14,9 @@ function Details() {
     }, [dispatch])
     const details = useSelector((state) => state.meals.mealDetails)
     // const detail = details[0]
-    const { strMeal, strCategory, strInstructions, strMealThumb,
+    const { strMeal, strInstructions, strMealThumb,
         strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
-        strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10} = details
+        strIngredient6, strIngredient7} = details
     
     return (
 
@@ -40,9 +40,7 @@ function Details() {
                     <p>{strIngredient5}</p>
                     <p>{strIngredient6}</p>
                     <p>{strIngredient7}</p>
-                    {/* <p>{strIngredient8}</p>
-                    <p>{strIngredient9}</p>
-                    <p>{strIngredient10}</p> */}
+                    
                 </div>
             </div>
             )}
