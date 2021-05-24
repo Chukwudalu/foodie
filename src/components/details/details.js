@@ -11,7 +11,7 @@ function Details() {
     const id = location.pathname.split('/')[1];
     useEffect(() => {
         dispatch(loadMealById(id))
-    }, [dispatch, id])
+    }, [id])
     const details = useSelector((state) => state.meals.mealDetails)
     // const detail = details[0]
     const { strMeal, strInstructions, strMealThumb,
