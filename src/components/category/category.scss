@@ -1,0 +1,24 @@
+.container{
+    flex: 0.9;
+    padding: 20px;
+
+    h2{
+        color: #f8f9fa;
+        margin-bottom: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .allmeals{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 70px;     
+        column-gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+            
+    }
+
+    @media screen and (max-width: 768px) {
+        flex: 1;
+    }
+}
