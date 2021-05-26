@@ -21,7 +21,7 @@ function Details() {
     return (
 
         <>
-            {Object.keys(details).length===0?<ReactLoading type={'bars'} color={'#bb3e03'} height={100} weight={100} className='loader'/>:(
+            {id && Object.keys(details).length===0?<ReactLoading type={'bars'} color={'#bb3e03'} height={100} weight={100} className='loader'/>:(
                 <div className='details'>
                 <div className='details_left'>
                     <h3>{strMeal}</h3>
